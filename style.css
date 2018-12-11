@@ -5,6 +5,7 @@
 }
 
 body{
+    min-width: 1177px;
     background-color: #f8f8f8;
 }
 
@@ -31,6 +32,7 @@ li{
 }
 
 .nav div{
+    height: 90px;
     float: left;
 }
 
