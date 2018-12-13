@@ -33,174 +33,8 @@ const element = (
                 <img src="img/location.png" alt="当前位置"/><span>当前位置：</span>
             </div>
             <div className="detail">
-                <form action="">
-                    <ul className="det">
-                        <li><span>员工姓名</span><input type="text" className="input-text" /></li>
-                        <li><span>性别</span><input type="radio" name="sex" value="male" className="input-radio"/><span>男</span><input type="radio" name="sex" value="female" className="input-radio" /><span>女</span></li>
-                        <li><span>手机号码</span><input type="text" className="input-text" /></li>
-                        <li><span>身份证号</span><input type="text" className="input-text" /></li>
-                        <li>
-                            <label>
-                                所属部门
-                                <select className="select-department">
-                                    <option value="none">请选择</option>
-                                    <option value="carWash">洗车部</option>
-                                    <option value="carRepairing">修车部</option>
-                                    <option value="sell">销售部</option>
-                                </select>
-                            </label>
-                        </li>
-                        <li>
-                            <label className="date">
-                                出身日期
-                                <select className="select-date">
-                                    <option value="1990">1990年</option>
-                                    <option value="1991">1991年</option>
-                                    <option value="1992">1992年</option>
-                                    <option value="1993">1993年</option>
-                                    <option value="1994">1994年</option>
-                                    <option value="1995">1995年</option>
-                                    <option value="1996">1996年</option>
-                                    <option value="1997">1997年</option>
-                                    <option value="1998">1998年</option>
-                                    <option value="1999">1999年</option>
-                                </select>
-                                <select className="select-date">
-                                    <option value="01">01月</option>
-                                    <option value="02">02月</option>
-                                    <option value="03">03月</option>
-                                    <option value="04">04月</option>
-                                    <option value="05">05月</option>
-                                    <option value="06">06月</option>
-                                    <option value="07">07月</option>
-                                    <option value="08">08月</option>
-                                    <option value="09">09月</option>
-                                    <option value="10">10月</option>
-                                    <option value="11">11月</option>
-                                    <option value="12">12月</option>
-                                </select>
-                                <select className="select-date">
-                                    <option value="01">01日</option>
-                                    <option value="02">02日</option>
-                                    <option value="03">03日</option>
-                                    <option value="04">04日</option>
-                                    <option value="05">05日</option>
-                                    <option value="06">06日</option>
-                                    <option value="07">07日</option>
-                                    <option value="08">08日</option>
-                                    <option value="09">09日</option>
-                                    <option value="10">10日</option>
-                                    <option value="01">11日</option>
-                                    <option value="02">12日</option>
-                                    <option value="03">13日</option>
-                                    <option value="04">14日</option>
-                                    <option value="05">15日</option>
-                                    <option value="06">16日</option>
-                                    <option value="07">17日</option>
-                                    <option value="08">18日</option>
-                                    <option value="09">19日</option>
-                                    <option value="10">20日</option>
-                                    <option value="01">21日</option>
-                                    <option value="02">22日</option>
-                                    <option value="03">23日</option>
-                                    <option value="04">24日</option>
-                                    <option value="05">25日</option>
-                                    <option value="06">26日</option>
-                                    <option value="07">27日</option>
-                                    <option value="08">28日</option>
-                                    <option value="09">29日</option>
-                                    <option value="10">30日</option>
-                                </select>
-                            </label>
-                        </li>
-                        <li>
-                            <label className="date">
-                                入职日期
-                                <select className="select-date">
-                                    <option value="1990">1990年</option>
-                                    <option value="1991">1991年</option>
-                                    <option value="1992">1992年</option>
-                                    <option value="1993">1993年</option>
-                                    <option value="1994">1994年</option>
-                                    <option value="1995">1995年</option>
-                                    <option value="1996">1996年</option>
-                                    <option value="1997">1997年</option>
-                                    <option value="1998">1998年</option>
-                                    <option value="1999">1999年</option>
-                                </select>
-                                <select className="select-date">
-                                    <option value="01">01月</option>
-                                    <option value="02">02月</option>
-                                    <option value="03">03月</option>
-                                    <option value="04">04月</option>
-                                    <option value="05">05月</option>
-                                    <option value="06">06月</option>
-                                    <option value="07">07月</option>
-                                    <option value="08">08月</option>
-                                    <option value="09">09月</option>
-                                    <option value="10">10月</option>
-                                    <option value="11">11月</option>
-                                    <option value="12">12月</option>
-                                </select>
-                                <select className="select-date">
-                                    <option value="01">01日</option>
-                                    <option value="02">02日</option>
-                                    <option value="03">03日</option>
-                                    <option value="04">04日</option>
-                                    <option value="05">05日</option>
-                                    <option value="06">06日</option>
-                                    <option value="07">07日</option>
-                                    <option value="08">08日</option>
-                                    <option value="09">09日</option>
-                                    <option value="10">10日</option>
-                                    <option value="01">11日</option>
-                                    <option value="02">12日</option>
-                                    <option value="03">13日</option>
-                                    <option value="04">14日</option>
-                                    <option value="05">15日</option>
-                                    <option value="06">16日</option>
-                                    <option value="07">17日</option>
-                                    <option value="08">18日</option>
-                                    <option value="09">19日</option>
-                                    <option value="10">20日</option>
-                                    <option value="01">21日</option>
-                                    <option value="02">22日</option>
-                                    <option value="03">23日</option>
-                                    <option value="04">24日</option>
-                                    <option value="05">25日</option>
-                                    <option value="06">26日</option>
-                                    <option value="07">27日</option>
-                                    <option value="08">28日</option>
-                                    <option value="09">29日</option>
-                                    <option value="10">30日</option>
-                                </select>
-                            </label>
-                        </li>
-                        <li><span>户籍所在地</span><input type="text" className="input-text" /></li>
-                        <li>
-                            <label id="location" className="date">
-                                现居住地
-                            </label>
-                        </li>
-                        <li><span>详细地址</span><input type="text" className="input-text" /></li>
-                        <li><span>月休息天数</span><input type="text" className="input-text" /></li>
-                        <li>
-                            <span className="workload">月任务量</span>
-                            <select className="select-work">
-                                <option value="carWash">洗车</option>
-                                <option value="carRepairing">修车</option>
-                                <option value="sell">销售</option>
-                            </select>
-                            <input type="text" className="input-m" />
-                            <input type="button" value="添加"/>
-                        </li>
-                        <li><span>基本薪资</span><input type="text" className="input-text" /></li>
-                        <li><span>备注</span><input type="text" className="input-text" /></li>
-                    </ul>
-                    <div className="but">
-                        <input className="button" type="button" value="确定" />
-                            <input className="button" type="button" value="重置" />
-                    </div>
+                <form action="" id="det">
+
                 </form>
             </div>
             <div className="foot">
@@ -212,7 +46,7 @@ const element = (
 </div>
 )
 
-class AddReceive extends React.Component {
+class Location extends React.Component {
 
     constructor(props) {
         super(props)
@@ -232,8 +66,6 @@ class AddReceive extends React.Component {
 
         }
     }
-
-
 
     getCity(province) {
 
@@ -312,7 +144,6 @@ class AddReceive extends React.Component {
         return gc1[province]
 
     }
-
 
     getCounty(province, city) {
 
@@ -1552,7 +1383,6 @@ class AddReceive extends React.Component {
 
     }
 
-
     handleChange(name, e) {
 
         e.preventDefault()
@@ -1589,7 +1419,6 @@ class AddReceive extends React.Component {
 
     }
 
-
     render() {
 
         let id = 0
@@ -1623,12 +1452,268 @@ class AddReceive extends React.Component {
 
 }
 
+class Detail extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {name: 0, phone: 0, IDCard:0};
+        this.checkPhoneNumber = this.checkPhoneNumber.bind(this)
+        this.checkName = this.checkName.bind(this);
+        this.checkIDCard = this.checkIDCard.bind(this);
+        this.checkAll = this.checkAll.bind(this);
+    }
+
+    checkAll(){
+        let a = this.state.name + this.state.IDCard + this.state.phone;
+        if(a == 3){
+            alert("提交成功！");
+        }else {
+            alert("提交失败！");
+        }
+    }
+
+    reloadAll(){
+        window.location.reload();
+    }
+
+    setNewState() {
+        this.setState({data: this.state.data + 1})
+    }
+    checkName(e)
+    {
+        let reg=/^[\u0391-\uFFE5]+$/;
+        if (e.target.value.length == 0) {
+            console.log("姓名不能为空!");
+            this.setState({name: 0});
+        }else if (e.target.value!=""&&!reg.test(e.target.value)) {
+            console.log('必须输入中文！');
+            this.setState({name: 0});
+        }else if (e.target.value.length==1||e.target.value.length>3) {
+            console.log("请输入正确的姓名")
+            this.setState({name: 0});
+        }else {
+            console.log("正确的姓名");
+            this.setState({name: 1});
+        }
+    }
+
+    checkPhoneNumber(e){
+        if(e.target.value.length==0)
+        {
+            console.log('手机号码不能为空！');
+            this.setState({phone: 0});
+        } else if(e.target.value.length!=11)
+        {
+            console.log('请输入有效的手机号码，需是11位！');
+            this.setState({phone: 0});
+        }
+        let myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        if(!myreg.test(e.target.value)) {
+            console.log('请输入有效的手机号码！');
+            this.setState({phone: 0});
+        }else{
+            console.log('有效的手机号码！');
+            this.setState({phone: 1});
+        }
+    }
+
+    checkIDCard(e){
+        if(/^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/.test(e.target.value)) {
+            console.log('正确的身份证号！');
+            this.setState({IDCard: 1});
+        } else {
+            console.log('请输入正确的身份证号！');
+            this.setState({IDCard: 0});
+        }
+    }
+
+    render(){
+        return(
+            <div>
+                <ul className="det">
+                    <li><span>员工姓名</span><input type="text" className="input-text" onChange={this.checkName}/></li>
+                    <li><span>性别</span><input type="radio" name="sex" value="male" defaultChecked className="input-radio"/><span>男</span><input type="radio" name="sex" value="female" className="input-radio" /><span>女</span></li>
+                    <li><span>手机号码</span><input type="text" className="input-text" onChange={this.checkPhoneNumber} /></li>
+                    <li><span>身份证号</span><input type="text" className="input-text" onChange={this.checkIDCard}/></li>
+                    <li>
+                        <label>
+                            所属部门
+                            <select className="select-department">
+                                <option value="none">请选择</option>
+                                <option value="carWash">洗车部</option>
+                                <option value="carRepairing">修车部</option>
+                                <option value="sell">销售部</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <label className="date">
+                            出身日期
+                            <select className="select-date">
+                                <option value="1990">1990年</option>
+                                <option value="1991">1991年</option>
+                                <option value="1992">1992年</option>
+                                <option value="1993">1993年</option>
+                                <option value="1994">1994年</option>
+                                <option value="1995">1995年</option>
+                                <option value="1996">1996年</option>
+                                <option value="1997">1997年</option>
+                                <option value="1998">1998年</option>
+                                <option value="1999">1999年</option>
+                            </select>
+                            <select className="select-date">
+                                <option value="01">01月</option>
+                                <option value="02">02月</option>
+                                <option value="03">03月</option>
+                                <option value="04">04月</option>
+                                <option value="05">05月</option>
+                                <option value="06">06月</option>
+                                <option value="07">07月</option>
+                                <option value="08">08月</option>
+                                <option value="09">09月</option>
+                                <option value="10">10月</option>
+                                <option value="11">11月</option>
+                                <option value="12">12月</option>
+                            </select>
+                            <select className="select-date">
+                                <option value="01">01日</option>
+                                <option value="02">02日</option>
+                                <option value="03">03日</option>
+                                <option value="04">04日</option>
+                                <option value="05">05日</option>
+                                <option value="06">06日</option>
+                                <option value="07">07日</option>
+                                <option value="08">08日</option>
+                                <option value="09">09日</option>
+                                <option value="10">10日</option>
+                                <option value="01">11日</option>
+                                <option value="02">12日</option>
+                                <option value="03">13日</option>
+                                <option value="04">14日</option>
+                                <option value="05">15日</option>
+                                <option value="06">16日</option>
+                                <option value="07">17日</option>
+                                <option value="08">18日</option>
+                                <option value="09">19日</option>
+                                <option value="10">20日</option>
+                                <option value="01">21日</option>
+                                <option value="02">22日</option>
+                                <option value="03">23日</option>
+                                <option value="04">24日</option>
+                                <option value="05">25日</option>
+                                <option value="06">26日</option>
+                                <option value="07">27日</option>
+                                <option value="08">28日</option>
+                                <option value="09">29日</option>
+                                <option value="10">30日</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <label className="date">
+                            入职日期
+                            <select className="select-date">
+                                <option value="1990">1990年</option>
+                                <option value="1991">1991年</option>
+                                <option value="1992">1992年</option>
+                                <option value="1993">1993年</option>
+                                <option value="1994">1994年</option>
+                                <option value="1995">1995年</option>
+                                <option value="1996">1996年</option>
+                                <option value="1997">1997年</option>
+                                <option value="1998">1998年</option>
+                                <option value="1999">1999年</option>
+                            </select>
+                            <select className="select-date">
+                                <option value="01">01月</option>
+                                <option value="02">02月</option>
+                                <option value="03">03月</option>
+                                <option value="04">04月</option>
+                                <option value="05">05月</option>
+                                <option value="06">06月</option>
+                                <option value="07">07月</option>
+                                <option value="08">08月</option>
+                                <option value="09">09月</option>
+                                <option value="10">10月</option>
+                                <option value="11">11月</option>
+                                <option value="12">12月</option>
+                            </select>
+                            <select className="select-date">
+                                <option value="01">01日</option>
+                                <option value="02">02日</option>
+                                <option value="03">03日</option>
+                                <option value="04">04日</option>
+                                <option value="05">05日</option>
+                                <option value="06">06日</option>
+                                <option value="07">07日</option>
+                                <option value="08">08日</option>
+                                <option value="09">09日</option>
+                                <option value="10">10日</option>
+                                <option value="01">11日</option>
+                                <option value="02">12日</option>
+                                <option value="03">13日</option>
+                                <option value="04">14日</option>
+                                <option value="05">15日</option>
+                                <option value="06">16日</option>
+                                <option value="07">17日</option>
+                                <option value="08">18日</option>
+                                <option value="09">19日</option>
+                                <option value="10">20日</option>
+                                <option value="01">21日</option>
+                                <option value="02">22日</option>
+                                <option value="03">23日</option>
+                                <option value="04">24日</option>
+                                <option value="05">25日</option>
+                                <option value="06">26日</option>
+                                <option value="07">27日</option>
+                                <option value="08">28日</option>
+                                <option value="09">29日</option>
+                                <option value="10">30日</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li><span>户籍所在地</span><input type="text" className="input-text" /></li>
+                    <li>
+                        <label id="location" className="date">
+                            现居住地
+                        </label>
+                    </li>
+                    <li><span>详细地址</span><input type="text" className="input-text" /></li>
+                    <li><span>月休息天数</span><input type="text" className="input-text" /></li>
+                    <li>
+                        <span className="workload">月任务量</span>
+                        <select className="select-work">
+                            <option value="carWash">洗车</option>
+                            <option value="carRepairing">修车</option>
+                            <option value="sell">销售</option>
+                        </select>
+                        <input type="text" className="input-m" />
+                        <input type="button" value="添加"/>
+                    </li>
+                    <li><span>基本薪资</span><input type="text" className="input-text" /></li>
+                    <li><span>备注</span><input type="text" className="input-text" /></li>
+                </ul>
+                <div className="but">
+                    <input className="button" type="button" value="确定" onClick={this.checkAll}/>
+                    <input className="button" type="button" value="重置" onClick={this.reloadAll}/>
+                </div>
+
+            </div>
+        )
+    }
+}
+
 ReactDOM.render(
     element,
     document.getElementById('app')
 );
 
 ReactDOM.render(
-    <AddReceive/>,
+    <Detail/>,
+    document.getElementById('det')
+);
+
+ReactDOM.render(
+    <Location/>,
     document.getElementById('location')
 );
