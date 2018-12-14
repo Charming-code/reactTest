@@ -170,6 +170,7 @@ li{
     margin-left: 10px;
     width: 90px;
     height: 30px;
+    border: 1px solid #cccccc;
 }
 
 .date .select-date:nth-child(1){
@@ -201,6 +202,10 @@ input[value="添加"]{
     margin-left: 14px;
 }
 
+input[value="添加"]:hover{
+    cursor: pointer;
+}
+
 .input-m{
     width: 165px;
     height: 30px;
@@ -224,6 +229,10 @@ input[value="添加"]{
     border: none;
     margin: 0 30px;
     /*line-height: 40px;*/
+}
+
+.button:hover{
+    cursor: pointer;
 }
 
 .foot{
