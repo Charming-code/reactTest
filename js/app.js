@@ -2,35 +2,35 @@ const element = (
 <div>
     <header className="header">
         <div className="logo">
-            <img src="../img/logo.png" alt="" />
+            <img src="img/logo.png" alt="" />
         </div>
         <div className="nav">
-            <div className="header-right"><img src="../img/nav1.png" alt="" /></div>
-            <div className="header-right"><img src="../img/nav2.png" alt="" /></div>
-            <div className="header-right"><img src="../img/nav3.png" alt="" /></div>
-            <div className="header-right"><img src="../img/nav4.png" alt="" /></div>
-            <div className="header-right"><img src="../img/nav5.png" alt="" /></div>
-            <div className="header-right"><img src="../img/nav6.png" alt="" /></div>
-            <div className="header-right"><img src="../img/nav7.png" alt="" /></div>
+            <div className="header-right"><img src="img/nav1.png" alt="" /></div>
+            <div className="header-right"><img src="img/nav2.png" alt="" /></div>
+            <div className="header-right"><img src="img/nav3.png" alt="" /></div>
+            <div className="header-right"><img src="img/nav4.png" alt="" /></div>
+            <div className="header-right"><img src="img/nav5.png" alt="" /></div>
+            <div className="header-right"><img src="img/nav6.png" alt="" /></div>
+            <div className="header-right"><img src="img/nav7.png" alt="" /></div>
         </div>
     </header>
     <div className="content">
         <div className="left-nav">
             <ul className="nav-content">
-                <li><img src="../img/lnav1.png" alt="商品管理" />商品管理</li>
-                <li><img src="../img/lnav2.gif" alt="商家管理" />商家管理</li>
-                <li><img src="../img/lnav3.gif" alt="订单管理" />订单管理</li>
-                <li><img src="../img/lnav4.gif" alt="广告管理" />广告管理</li>
-                <li><img src="../img/lnav5.gif" alt="会员管理" />会员管理</li>
-                <li><img src="../img/lnav6.gif" alt="权限管理" />权限管理</li>
-                <li><img src="../img/lnav7.gif" alt="员工管理" />员工管理</li>
-                <li><img src="../img/lnav8.gif" alt="员工考勤" />员工考勤</li>
-                <li><img src="../img/lnav9.gif" alt="报表统计" />报表统计</li>
+                <li><img src="img/lnav1.png" alt="商品管理" />商品管理</li>
+                <li><img src="img/lnav2.gif" alt="商家管理" />商家管理</li>
+                <li><img src="img/lnav3.gif" alt="订单管理" />订单管理</li>
+                <li><img src="img/lnav4.gif" alt="广告管理" />广告管理</li>
+                <li><img src="img/lnav5.gif" alt="会员管理" />会员管理</li>
+                <li><img src="img/lnav6.gif" alt="权限管理" />权限管理</li>
+                <li><img src="img/lnav7.gif" alt="员工管理" />员工管理</li>
+                <li><img src="img/lnav8.gif" alt="员工考勤" />员工考勤</li>
+                <li><img src="img/lnav9.gif" alt="报表统计" />报表统计</li>
             </ul>
         </div>
         <div className="right-content">
             <div className="location">
-                <img src="../img/location.png" alt="当前位置"/><span>当前位置：</span>
+                <img src="img/location.png" alt="当前位置"/><span>当前位置：</span>
             </div>
             <div className="detail">
                 <form action="" id="det">
@@ -44,7 +44,7 @@ const element = (
         </div>
     </div>
 </div>
-)
+);
 
 class Location extends React.Component {
 
@@ -255,7 +255,7 @@ class Detail extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {name: 0, phone: 0, IDCard:0};
+        this.state = {name: 0, phone: 0, IDCard:0, nameStatus: "", phoneStatus: "", IDCardStatus: ""};
         this.checkPhoneNumber = this.checkPhoneNumber.bind(this)
         this.checkName = this.checkName.bind(this);
         this.checkIDCard = this.checkIDCard.bind(this);
@@ -280,16 +280,16 @@ class Detail extends React.Component {
         let reg=/^[\u0391-\uFFE5]+$/;
         if (e.target.value.length == 0) {
             console.log("姓名不能为空!");
-            this.setState({name: 0});
+            this.setState({name: 0, nameStatus:"姓名不能为空！"});
         }else if (e.target.value!=""&&!reg.test(e.target.value)) {
             console.log('必须输入中文！');
-            this.setState({name: 0});
+            this.setState({name: 0, nameStatus:"必须输入中文！"});
         }else if (e.target.value.length==1||e.target.value.length>3) {
-            console.log("请输入正确的姓名");
-            this.setState({name: 0});
+            console.log("请输入正确的姓名！");
+            this.setState({name: 0, nameStatus:"请输入正确的姓名！"});
         }else {
-            console.log("正确的姓名");
-            this.setState({name: 1});
+            console.log("正确的姓名！");
+            this.setState({name: 1, nameStatus:"正确的姓名！"});
         }
     }
 
@@ -297,29 +297,29 @@ class Detail extends React.Component {
         if(e.target.value.length==0)
         {
             console.log('手机号码不能为空！');
-            this.setState({phone: 0});
+            this.setState({phone: 0, phoneStatus:" "});
         } else if(e.target.value.length!=11)
         {
             console.log('请输入有效的手机号码，需是11位！');
-            this.setState({phone: 0});
+            this.setState({phone: 0, phoneStatus:"请输入有效的手机号码，需是11位！"});
         }
         let myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
         if(!myreg.test(e.target.value)) {
             console.log('请输入有效的手机号码！');
-            this.setState({phone: 0});
+            this.setState({phone: 0, phoneStatus:"请输入有效的手机号码！"});
         }else{
             console.log('有效的手机号码！');
-            this.setState({phone: 1});
+            this.setState({phone: 1, phoneStatus:"有效的手机号码！"});
         }
     }
 
     checkIDCard(e){
         if(/^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/.test(e.target.value)) {
             console.log('正确的身份证号！');
-            this.setState({IDCard: 1});
+            this.setState({IDCard: 1, IDCardStatus: "正确的身份证号！"});
         } else {
             console.log('请输入正确的身份证号！');
-            this.setState({IDCard: 0});
+            this.setState({IDCard: 0, IDCardStatus: "请输入正确的身份证号！"});
         }
     }
 
@@ -327,10 +327,10 @@ class Detail extends React.Component {
         return(
             <div>
                 <ul className="det">
-                    <li><span>员工姓名</span><input type="text" className="input-text" onChange={this.checkName}/></li>
+                    <li><span>员工姓名</span><input type="text" className="input-text" onBlur={this.checkName}/><div className="checkPhoneNumber">{this.state.nameStatus}</div></li>
                     <li><span>性别</span><input type="radio" name="sex" value="male" defaultChecked className="input-radio"/><span>男</span><input type="radio" name="sex" value="female" className="input-radio" /><span>女</span></li>
-                    <li><span>手机号码</span><input type="text" className="input-text" onChange={this.checkPhoneNumber} /></li>
-                    <li><span>身份证号</span><input type="text" className="input-text" onChange={this.checkIDCard}/></li>
+                    <li className="phoneNumber"><span>手机号码</span><input type="text" className="input-text" onBlur={this.checkPhoneNumber} /><div className="checkPhoneNumber">{this.state.phoneStatus}</div></li>
+                    <li><span>身份证号</span><input type="text" className="input-text" onBlur={this.checkIDCard}/><div className="checkIDCard">{this.state.IDCardStatus}</div></li>
                     <li>
                         <label>
                             所属部门
@@ -493,7 +493,6 @@ class Detail extends React.Component {
                     <input className="button" type="button" value="确定" onClick={this.checkAll}/>
                     <input className="button" type="button" value="重置" onClick={this.reloadAll}/>
                 </div>
-
             </div>
         )
     }
